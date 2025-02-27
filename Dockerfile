@@ -1,6 +1,6 @@
 FROM python:3.11-alpine
 
-WORKDIR /app
+WORKDIR /
 
 RUN apk add --no-cache gcc musl-dev libffi-dev openssl-dev
 
