@@ -1,8 +1,13 @@
 version: '3.8'
 
 services:
-  app:
-    build: ./
-    container_name: funpaydocker
+  funpay_bot:
+    build: .
+    container_name: funpay_bot
     restart: always
-    command: python main.py
+    volumes:
+      - .:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: ["python", "main.py"]
