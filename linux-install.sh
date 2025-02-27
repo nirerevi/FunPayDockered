@@ -25,6 +25,10 @@ sudo chmod +x /usr/local/bin/docker-compose && log "Установлены пр�
 docker --version && log "Проверка версии Docker: $(docker --version)"
 docker-compose --version && log "Проверка версии Docker Compose: $(docker-compose --version)"
 
-log "Запуск контейнера funpay_bot"
-docker compose up -d
-docker compose run --rm -it funpay_bot && log "Контейнер успешно запущен"
+log "Клонирование репозитория с проектом"
+git clone https://github.com/nirerevi/FunPayDockered.git && log "Репозиторий клонирован"
+
+cd FunPayDockered && log "Перешли в директорию проекта"
+
+log "Запуск контейнера funpay_bot с помощью Docker Compose"
+docker compose up --build -d && log "Контейнер успешно запущен"
