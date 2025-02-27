@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   app:
-    build: .
+    build: ./
     container_name: funpaydocker
     restart: always
-    volumes:
-      - .:/
-    working_dir: /
     command: python main.py
