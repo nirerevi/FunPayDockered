@@ -11,7 +11,6 @@
 - [Установка](#установка)
   - [Windows](#windows)
   - [Linux (Ubuntu)](#linux-ubuntu)
-  - [Docker](#docker)
 
 ## Возможности
 
@@ -49,7 +48,7 @@
 2. Скачайте архив с проектом или клонируйте репозиторий:
    - Если используете Git, выполните команду:
      ```bash
-     git clone https://github.com/ваш-репозиторий/FunPayVertex.git
+     git clone https://github.com/nirerevi/FunPayDockered.git
      ```
    - Если не используете Git, скачайте архив и распакуйте его в удобное место.
 3. Перейдите в папку с проектом:
@@ -64,6 +63,6 @@
 ### Linux (Ubuntu)
 1. Выполните команду:
    ```bash
-   wget https://raw.githubusercontent.com//
+   wget https://raw.githubusercontent.com/nirerevi/FunPayDockered/main/linux-install.sh -nc && bash linux-install.sh
    ```
    
